@@ -2,8 +2,9 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
-        "dev": "vite"
+        "dev": "concurrently \"npm run dev:vite\" \"npm run serve:laravel\"",
+        "dev:vite": "vite",
+        "serve:laravel": "php artisan serve"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.20",
@@ -15,7 +16,9 @@
         "vite": "^5.0"
     },
     "dependencies": {
+        "@vitejs/plugin-react": "^4.3.3",
         "react": "^18.3.1",
         "react-dom": "^18.3.1"
     }
+    
 }
