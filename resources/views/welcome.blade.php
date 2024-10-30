@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel + React</title>
-    @viteReactRefresh
-    @vite('resources/js/app.jsx')
-</head>
-<body>
-    <div id="app"></div>
-</body>
-</html>
+@extends("template.template") 
+@section("title","Hotel EcoParaíso Lodge - Conexión Natural y Comodidad") 
+@section("content")
+<div id="app"></div>
+@stop
