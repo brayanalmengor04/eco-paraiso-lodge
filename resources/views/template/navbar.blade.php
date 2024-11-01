@@ -8,19 +8,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="#" class="nav-item nav-link active">Inicio</a>
-                        <a href="#" class="nav-item nav-link">Sobre Nosotros</a>
+                        <a href="{{route('welcome')}}" class="nav-item nav-link active">Inicio</a>
+                        <a href="{{route('about')}}" class="nav-item nav-link">Sobre Nosotros</a>
                         <a href="#" class="nav-item nav-link">Servicios</a>
                         <a href="#" class="nav-item nav-link">Blog</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
                             <div class="dropdown-menu m-0">
-                                <a href="#" class="dropdown-item">Solicitar Reserva</a>
+                                <a href="{{route('reserva')}}" class="dropdown-item">Solicitar Reserva</a>
                                 <a href="#" class="dropdown-item">Testimonios</a>
-                                <a href="#" class="dropdown-item">Contacto</a>
+                                <a href="{{route('contact')}}" class="dropdown-item">Contacto</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="{{route('contact')}}" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="d-none d-xl-flex me-3">
                         <div class="d-flex flex-column pe-3 border-end border-primary">
