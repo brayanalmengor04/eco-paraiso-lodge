@@ -10,7 +10,7 @@
                     <div class="navbar-nav ms-auto py-0">
                         <a href="{{route('welcome')}}" class="nav-item nav-link active">Inicio</a>
                         <a href="{{route('about')}}" class="nav-item nav-link">Sobre Nosotros</a>
-                        <a href="#" class="nav-item nav-link">Servicios</a>
+                        <a href="{{route('service') }}" class="nav-item nav-link">Servicios</a>
                         <a href="#" class="nav-item nav-link">Blog</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <button class="btn btn-primary btn-md-square d-flex flex-shrink-0 mb-3 mb-lg-0 rounded-circle me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                    <a href="" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Reserva Ya!</a>
+                    <a href="" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4">Iniciar Session</a>
                 </div>
             </nav>
 

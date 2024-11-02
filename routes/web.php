@@ -15,7 +15,13 @@ Route::get('/contacto', function(){
 } )->name('contact');
 
 
+Route::get('/service', function(){
+    return view('service');
+} )->name('service');
+
 
 Route::get('/reserva', function(){
     return view('reserve');
-} )->name('reserva');
+} )->name('reserva'); 
+
+

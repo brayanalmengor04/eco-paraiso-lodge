@@ -34,7 +34,7 @@ const HotelReservations = ({ hotels }) => {
                   </a>
                   <p className="fs-4 text-primary mb-3">${hotel.price} por noche</p>
                   <a href="#" className="btn btn-secondary rounded-pill py-2 px-4">
-                    Más Información
+                    Reservar Habitacion
                   </a>
                 </div>
               </div>
