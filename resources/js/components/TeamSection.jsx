@@ -5,7 +5,7 @@ import React from 'react';
 const teamMembers = [
   {
     id: 1,
-    name: 'Bryan Almengor',
+    name: 'Brayan Almengor',
     position: '(CEO / Director general)',
     img: 'img/porfile.jpg',
     socials: [
