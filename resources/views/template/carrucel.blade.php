@@ -18,7 +18,7 @@
                                 En Ecoparaiso Lodge, la armonía con la naturaleza es nuestra prioridad. Disfruta de un entorno sostenible y relajante, donde cada rincón está diseñado para ofrecerte comodidad y tranquilidad, mientras preservamos el ecosistema local.
                             </p>
                             <div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="{{route('reserva')}}">Reserva Ahora</a>
+                                <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="{{route('reservation.create')}}">Reserva Ahora</a>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                             En Ecoparaiso Lodge, te invitamos a vivir experiencias únicas rodeado de la belleza natural. Desde excursiones guiadas hasta actividades de ecoturismo, cada momento está diseñado para que te conectes con la tierra y disfrutes de la serenidad que solo la naturaleza puede ofrecer.
                         </p>
                         <div class="carousel-caption-2-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                            <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="{{route('reserva')}}">Reserva Ya</a>
+                            <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="{{route('reservation.create')}}">Reserva Ya</a>
                         </div>
                     </div>
                 </div>   
