@@ -8,3 +8,4 @@
 @endif
 <div id="app"></div>  
 @stop
+
