@@ -29,8 +29,8 @@
                 <div class="text-center mx-auto pb-5" style="max-width: 800px;">
                     <h4 class="text-uppercase text-primary">Conectémonos</h4>
                     <h1 class="display-3 text-capitalize mb-3">Envía tu mensaje</h1>
-                    <p class="mb-0">Actualmente, el formulario de contacto no está activo. Puedes obtener un formulario funcional con Ajax y PHP en pocos minutos. Solo copia y pega los archivos, añade un poco de código y listo. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Descargar ahora</a>.</p>
-                </div>
+                    <p class="mb-0">¿Tienes alguna pregunta o quieres más información sobre Ecoparaiso Lodge? ¡No dudes en contactarnos! Estamos aquí para ayudarte a planificar una experiencia inolvidable en la naturaleza. </p>
+                    </div>
 
                 <!-- agregar algo para resibir los correos -->
                 <form action="" method="">
@@ -80,7 +80,8 @@
                             <i class="fas fa-map-marker-alt fa-2x text-secondary me-4"></i>
                             <div>
                                 <h4>Dirección</h4>
-                                <p class="mb-0">123 Torre Norte, Nueva York, EE.UU.</p>
+                                <p class="mb-0">Panamá, Capira, Corregimiento de Ciricito, en el 
+Coracoral </p>
                             </div>
                         </div>
                     </div>
