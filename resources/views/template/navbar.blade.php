@@ -32,8 +32,8 @@
                 <div class="nav-item dropdown">  
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Cuenta</a> 
                     <div class="dropdown-menu m-0">
-                        <a href="#" class="dropdown-item">Perfil</a>
-                        <a href="#" class="dropdown-item">Habitaciones Reservadas</a>
+                        <a href="{{route('reservation.index')}}" class="dropdown-item">Perfil</a>
+                        <a href="{{route('reservation.index')}}" class="dropdown-item">Habitaciones Reservadas</a>
                         <a href="#" class="dropdown-item">Otras Opciones</a>
                     </div> 
                 </div>

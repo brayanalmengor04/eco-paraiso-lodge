@@ -10,12 +10,18 @@ use App\Http\Controllers\RoomController;
 
 // Rutas CRUD- Administrador-----------
 Route::resource('hotel', HotelController::class);
-Route::resource('room', RoomController::class);
-Route::resource('reservation', ReservationController::class);
-// Route::resource('reservation', ReservationController::class); tuve que quitarlo por el query
+Route::resource('room', RoomController::class); 
+
+Route::get('/reservations', [ReservationController::class, 'index'])->name('reservation.index');
+Route::get('/reservations/create', [ReservationController::class, 'create'])->name('reservation.create');
+Route::post('/reservations', [ReservationController::class, 'store'])->name('reservation.store'); 
+
+Route::get('/reservations/{id}/details', [ReservationController::class, 'details'])->name('reservation.details');
+Route::delete('/reservations/{id}', [ReservationController::class, 'destroy'])->name('reservation.destroy');
+Route::post('/reservations/{id}/confirm', [ReservationController::class, 'confirm'])->name('reservation.confirm');
+
 // Hoteles disponibles 
 Route::get('/api/rooms', [RoomController::class, 'apiRooms']);
-// Reservacion
 
 Route::controller(PageController::class)->group(function () {
     Route::get('/', 'welcome')->name('welcome');

@@ -7,31 +7,16 @@ const HotelReservations = () => {
     // Cargar las habitaciones desde la API de Laravel
     fetch('/api/rooms')
       .then(response => response.json())
-      .then(data => setRooms(data))
+      .then(data => {
+        // Filtrar solo las habitaciones disponibles (is_available true)
+        const availableRooms = data.filter(room => room.is_available === 1);
+        setRooms(availableRooms);
+      })
       .catch(error => console.error('Error al cargar los datos:', error));
   }, []);
 
-  const handleReserveRoom = (room) => {
-    // Datos a enviar al controlador Laravel para realizar la reserva
-    const reservationData = {
-      hotel_name: room.hotel?.name || 'Hotel desconocido',
-      room_number: room.number,
-      price: room.price,
-    };
-
-    fetch('/reservations', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content, // Para CSRF en Laravel
-      },
-      body: JSON.stringify(reservationData),
-    })
-      .then(response => response.json())
-      .then(data => {
-        alert(`Reserva creada para el hotel: ${data.hotel_name}`);
-      })
-      .catch(error => console.error('Error al reservar la habitación:', error));
+  const handleReserveRoom = (room) => { 
+    window.location.href = `/reservations/create?room_id=${room.id}`;
   };
 
   return (
