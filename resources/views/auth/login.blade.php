@@ -97,12 +97,12 @@
                                                         </div>
                                                     </div> 
                                                     <!-- Para agregar un administrador  ----------------------------------------->
-                                                    <!-- <div class="col-12">
+                                                    <div class="col-12">
                                                         <div class="form-floating">
                                                             <input type="rol" name="rol" class="form-control border-0" id="registerPassword" placeholder="Cree una contraseña" required>
                                                             <label for="registerPassword">Rol</label>
                                                         </div>
-                                                    </div> -->
+                                                    </div>
                                                     <div class="col-12">
                                                         <div class="form-floating">
                                                             <input type="password" name="password_confirmation" class="form-control border-0" id="registerConfirmPassword" placeholder="Confirme su contraseña" required>
