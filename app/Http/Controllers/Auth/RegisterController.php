@@ -22,8 +22,7 @@ class RegisterController extends Controller
         User::create([
             'name' => $request->name,
             'email' => $request->email,
-             'rol' => 'user', 
-            // 'rol'=>$request->rol, // para agregar un administrador -> formulario creaccion usuario auth/Register
+            'rol'=>$request->rol, // para agregar un administrador -> formulario creaccion usuario auth/Register
             'password' => Hash::make($request->password),
         ]);
     
